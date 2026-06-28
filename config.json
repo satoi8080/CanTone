@@ -1,0 +1,38 @@
+{
+  "fonts": {
+    "input": {
+      "mono": "assets/Noto_Sans_Mono/NotoSansMono-Regular.ttf"
+    }
+  },
+  "scaling": {
+    "digit_scale": 0.62
+  },
+  "tone_box": {
+    "x_left": 168,
+    "x_right": 432,
+    "y_bottom": 560,
+    "y_top": 830,
+    "stroke": 24,
+    "stave": 30
+  },
+  "variants": [
+    {
+      "standard": "hongkong",
+      "output": "CanToneSansHK-Regular.ttf",
+      "font_info": {
+        "family_name": "CanTone Sans HK",
+        "full_name": "CanTone Sans HK Regular",
+        "postscript_name": "CanToneSansHK-Regular"
+      }
+    },
+    {
+      "standard": "guangzhou",
+      "output": "CanToneSansGZ-Regular.ttf",
+      "font_info": {
+        "family_name": "CanTone Sans GZ",
+        "full_name": "CanTone Sans GZ Regular",
+        "postscript_name": "CanToneSansGZ-Regular"
+      }
+    }
+  ]
+}

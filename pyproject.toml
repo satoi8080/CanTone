@@ -1,0 +1,26 @@
+[project]
+name = "cantone"
+version = "0.1.0"
+description = "CanTone is a Cantonese (Jyutping) reading-aid font that renders tone digits 1-9 with a Chao tone-letter contour drawn above each digit."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fonttools>=4.63.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.14",
+]
+
+[tool.ruff]
+src = ["."]
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "C4", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
