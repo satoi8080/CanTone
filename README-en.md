@@ -55,6 +55,12 @@ largely merged it into the high-level 55. The other six tones are identical in b
 | Hong Kong | 55 | 35 | 33 | 21 | 13 | 22 | 5 | 3 | 2 |
 | Guangzhou | 53 | 35 | 33 | 21 | 13 | 22 | 5 | 3 | 2 |
 
+## Download
+
+Grab the latest `CanToneSans-*.zip` from the [Releases page](https://github.com/satoi8080/CanTone/releases).
+Unzip it for `CanToneSansHK-Regular.ttf`, `CanToneSansGZ-Regular.ttf` and `OFL.txt`,
+the fonts' license.
+
 ## Usage
 
 - **Editors / terminals**: set the font to `CanTone Sans HK` or `CanTone Sans GZ`.
@@ -87,6 +93,7 @@ Requires Python 3.12+ and [uv](https://docs.astral.sh/uv/).
 uv sync
 uv run main.py          # writes CanToneSansHK and CanToneSansGZ .ttf files
 uv run python scripts/gen_preview.py   # regenerate preview SVGs (then rasterise, e.g. with inkscape)
+uv run python scripts/package.py       # bundle into CanToneSans-v<version>.zip (with OFL.txt)
 ```
 
 Glyph geometry (digit scale, tone-box size, stroke weight, stave position) is tunable in

@@ -50,6 +50,11 @@ CanTone 提供两个字型，差别**只在阴平（第 1 声）**：
 | 香港 HK | 55 | 35 | 33 | 21 | 13 | 22 | 5 | 3 | 2 |
 | 广州 GZ | 53 | 35 | 33 | 21 | 13 | 22 | 5 | 3 | 2 |
 
+## 下载
+
+到 [Releases](https://github.com/satoi8080/CanTone/releases) 下载最新的 `CanToneSans-*.zip`，解压后即得
+`CanToneSansHK-Regular.ttf`、`CanToneSansGZ-Regular.ttf` 与字型授权 `OFL.txt`。
+
 ## 使用方式
 
 - **编辑器／终端**：把字型设为 `CanTone Sans HK` 或 `CanTone Sans GZ`。
@@ -80,6 +85,7 @@ CanTone 提供两个字型，差别**只在阴平（第 1 声）**：
 uv sync
 uv run main.py          # 生成 CanToneSansHK / CanToneSansGZ 两个 .ttf
 uv run python scripts/gen_preview.py   # 重新生成预览 SVG（再用 inkscape 等转成 PNG）
+uv run python scripts/package.py       # 打包成 CanToneSans-v<版本>.zip（含 OFL.txt）
 ```
 
 字形几何（数字缩放、声调框尺寸、笔画粗细、竖标位置）可在 `config.json` 调整；

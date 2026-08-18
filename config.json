@@ -1,4 +1,5 @@
 {
+  "package_name": "CanToneSans",
   "fonts": {
     "input": {
       "mono": "assets/Noto_Sans_Mono/NotoSansMono-Regular.ttf"

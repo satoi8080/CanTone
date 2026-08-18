@@ -52,6 +52,12 @@ CanTone は 2 つのフォントを用意しており、違いは**陰平（第 
 | 香港 HK | 55 | 35 | 33 | 21 | 13 | 22 | 5 | 3 | 2 |
 | 広州 GZ | 53 | 35 | 33 | 21 | 13 | 22 | 5 | 3 | 2 |
 
+## ダウンロード
+
+[Releases](https://github.com/satoi8080/CanTone/releases) から最新の `CanToneSans-*.zip` を取得してください。
+展開すると `CanToneSansHK-Regular.ttf`、`CanToneSansGZ-Regular.ttf` と
+フォントのライセンス `OFL.txt` が入っています。
+
 ## 使い方
 
 - **エディタ／ターミナル**：フォントを `CanTone Sans HK` または `CanTone Sans GZ` に設定。
@@ -83,6 +89,7 @@ Python 3.12+ と [uv](https://docs.astral.sh/uv/) が必要です。
 uv sync
 uv run main.py          # CanToneSansHK / CanToneSansGZ の 2 つの .ttf を生成
 uv run python scripts/gen_preview.py   # プレビュー SVG を再生成（inkscape 等で PNG 化）
+uv run python scripts/package.py       # CanToneSans-v<バージョン>.zip を作成（OFL.txt 同梱）
 ```
 
 グリフの形状（数字の縮尺、声調枠のサイズ、線の太さ、縦棒の位置）は `config.json` で調整でき、
